@@ -2,6 +2,10 @@
 @media (max-width: 991px)
     .container
         padding: 0 10px
+    .catalog
+        padding-bottom: 50px
+        &__content
+            justify-content: space-around
 @media (max-width: 767px)
     .container
         padding: 0 10px
@@ -55,6 +59,10 @@
             width: 556px
             img
                 width: 100%
+    .catalog
+        &__tab
+            width: 155px
+            font-size: 16px
 @media (max-width: 575px)
     .header
         &__logo
@@ -97,3 +105,13 @@
         padding: 40px 0 40px 0
         &__inner
             width: 300px
+    .catalog
+        padding-bottom: 40px
+        &__tabs
+            flex-direction: column
+            align-items: center
+            margin-top: 20px
+        &__tab
+            margin-top: 20px
+        &__content
+            margin-top: 40px
