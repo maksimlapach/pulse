@@ -95,4 +95,13 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    // Scroll up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
 });
