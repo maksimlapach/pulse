@@ -105,15 +105,19 @@
             &_active
                 transform: translateX(0%)
                 margin-right: 20px
+            &_back
+                width: 50%
+                position: relative
+                transition: 0.5s all
+                &_active
+                    transform: translateX(-100%)
+                    margin-left: 0px
         &__list
-            width: 50%
             transform: translateX(0%)
-            padding-right: 15px
-            padding-left: 12px
-            margin-top: -5px
+            padding: 0 15px 0 0
+            margin-top: -4px
             margin-bottom: 0
-            margin-left: 20px
-            transition: 0.5s all
+            margin-left: 12px
             list-style-type: none
             li
                 position: relative
@@ -130,9 +134,6 @@
                     width: 5px
                     height: 5px
                     background-color: $main_color
-            &_active
-                transform: translateX(-100%)
-                margin-left: 0px
         &__back
             position: absolute
             bottom: 0
